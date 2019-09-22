@@ -1,0 +1,162 @@
+/* ================= Global ===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Questrial;
+}
+
+.btn {
+  color: white;
+  border: none;
+  background: rgb(78, 56, 177);
+  padding: 10px;
+  border-radius: 20px;
+  width: 80px;
+  border: 3px solid transparent;
+  transition: border 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.btn:hover {
+  background: rgb(255, 255, 255);
+  border: 3px solid rgb(78, 56, 177);
+  color: rgb(78, 56, 177);
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/* ===================HERO==================== */
+
+.Hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.Hero-SideImage {
+  background: rgb(30, 40, 68);
+}
+
+.Hero-SideImage img {
+  width: 100%;
+  opacity: 0.6;
+  min-height: 100%;
+}
+
+.Hero-Main {
+  background: rgb(250, 250, 250);
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-Nav {
+  margin: 20px 30px;
+}
+
+.Hero-Nav ol {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.Hero-Nav ol li {
+  list-style-type: none;
+  margin: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+}
+
+.Hero-Nav ol li:hover {
+  border-bottom: 2px solid rgb(78, 56, 177);
+}
+
+.Hero-Nav-MainText {
+  color: rgb(43, 43, 43);
+  margin: 50px;
+  font-size: 5rem;
+  flex-grow: 1;
+}
+
+.Hero-Nav-Button {
+  margin-left: 60px;
+}
+
+/* ============================================= */
+
+.Project {
+  background: rgb(245, 245, 245);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* display: flex; */
+  padding: 30px 0;
+}
+
+.Project-Details {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* width: 66%; */
+}
+.Project-Image {
+  display: flex;
+  justify-content: center;
+  /* width: 33%; */
+}
+
+.Project-Image img {
+  height: 500px;
+}
+
+.Project-Details-Box {
+  background: white;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 5px 5px 14px 0px rgb(212, 212, 212);
+}
+
+.Project-Details-Box-Title {
+  padding-bottom: 20px;
+}
+
+.Project-Details-Box p {
+  padding-right: 30%;
+  padding-bottom: 20px;
+}
+
+.Round-Icon {
+  display: inline-block;
+  padding: 25px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Features-Box {
+  display: flex;
+}
+
+.Feature h3 {
+  padding: 20px 0;
+}
+
+.Project-Strip {
+  height: 40%;
+  width: 100%;
+  z-index: -10;
+  position: absolute;
+  background: rgb(255, 174, 0);
+}
