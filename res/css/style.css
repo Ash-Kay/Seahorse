@@ -56,6 +56,7 @@
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .Hero-Nav {
@@ -82,21 +83,21 @@
   color: rgb(43, 43, 43);
   margin: 50px;
   font-size: 5rem;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .Hero-Nav-Button {
   margin-left: 60px;
 }
 
-/* ============================================= */
+/* ===============PROJECT==================== */
 
 .Project {
   background: rgb(245, 245, 245);
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* display: flex; */
+  min-height: 100vh;
   padding: 30px 0;
 }
 
@@ -106,14 +107,18 @@
   position: relative;
   /* width: 66%; */
 }
+
 .Project-Image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* width: 33%; */
 }
 
-.Project-Image img {
-  height: 500px;
+.Mobile-Image {
+  height: 70vh;
+  border-radius: 10px;
 }
 
 .Project-Details-Box {
@@ -123,6 +128,7 @@
   border-radius: 10px;
   z-index: 10;
   box-shadow: 5px 5px 14px 0px rgb(212, 212, 212);
+  /* height: 80vh; */
 }
 
 .Project-Details-Box-Title {
@@ -146,7 +152,9 @@
 }
 
 .Features-Box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-wrap: wrap; */
 }
 
 .Feature h3 {
@@ -159,4 +167,55 @@
   z-index: -10;
   position: absolute;
   background: rgb(255, 174, 0);
+}
+
+.Slider-Control {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.Slide_Right,
+.Slide_Left {
+  box-shadow: 5px 5px 14px 0px rgb(212, 212, 212);
+}
+
+/* ====================================== */
+
+.Mobile-Cover {
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  height: calc(70vh + 20px);
+  box-shadow: 5px 5px 14px 0px rgb(212, 212, 212);
+  margin-bottom: 2rem;
+}
+
+.Mobile-Cover img {
+  display: none;
+}
+
+#Active_Img {
+  display: block !important;
+}
+
+.Space {
+  width: 200px;
+}
+
+/* ============MEDIA================== */
+
+@media only screen and (max-width: 960px) {
+  .Hero {
+    grid-template-columns: 1fr;
+  }
+
+  .Hero-SideImage {
+    display: none;
+  }
+
+  .Project {
+    flex-direction: column;
+    grid-template-columns: none;
+  }
 }
