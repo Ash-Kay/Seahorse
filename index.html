@@ -5,39 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./res/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      rel="stylesheet"
+    />
     <title>Seahorse</title>
   </head>
   <body>
-    <div class="Hero">
+    <div class="Hero" id="Hero">
       <div class="Hero-SideImage">
         <img src="./res/images/sideimage.jpg" alt="sideimage" />
       </div>
       <div class="Hero-Main">
         <nav class="Hero-Nav">
           <ol>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
+            <a href="#Hero"><li>Home</li></a>
+            <a href="#ProjectSection"><li>Projects</li></a>
           </ol>
         </nav>
-        <h1 class="Hero-Nav-MainText">Web<br />& Mobile<br />Development</h1>
 
-        <a href="https://drive.google.com/open?id=10Lac-JWVXD6Toqnxv-LZ1fBmskL0fAov" target="_blank"
+        <div class="Hero-Nav-MainText">
+          <span>Hello World! I am</span>
+          <br />
+          <h1>
+            Ashish Kumar
+          </h1>
+          <span id="Typewriter">Full Stack / Android / Game Developer</span>
+          <span>Developer</span>
+        </div>
+
+        <a
+          href="https://drive.google.com/open?id=10Lac-JWVXD6Toqnxv-LZ1fBmskL0fAov"
+          target="_blank"
           ><button class="Hero-Nav-Button btn">CV</button></a
         >
       </div>
     </div>
 
-    <div>
+    <div id="ProjectSection">
+      <!-- ****Group Chat**** -->
       <div class="Project">
         <div class="Project-Details">
           <div class="Project-Details-Box">
             <h1 class="Project-Details-Box-Title">Group Chat</h1>
             <p>
-              Group Chat allows users to Create and Join chat group, A chat group can contain virtualy Infinite
-              participants. The server of Android App is written in Node.js and hosted on Heroku.
+              Group Chat allows users to Create and Join chat group, A chat
+              group can contain virtualy Infinite participants. The server of
+              Android App is written in Node.js and hosted on Heroku.
             </p>
             <div class="Features-Box">
               <div class="Feature">
@@ -46,16 +64,21 @@
                 </div>
                 <h3>Fast Realtime Chat</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Infinite Participants</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
@@ -64,7 +87,8 @@
                 </div>
                 <h3>Node.js Server</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
@@ -73,32 +97,51 @@
                 </div>
                 <h3>Hosted on Heroku</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
             </div>
             <div class="btn-container">
-              <a href="https://github.com/Ash-Kay/Group-Chat" target="_blank"><button class="btn">Code</button></a>
+              <a href="https://github.com/Ash-Kay/Group-Chat" target="_blank">
+                <button class="btn">Code</button>
+              </a>
               <button class="btn">Live</button>
             </div>
           </div>
         </div>
         <div class="Project-Image">
           <div class="Mobile-Cover">
-            <img class="Mobile-Image" id="Active_Img" src="./res/images/pro1pic1.png" alt="project1" />
-            <img class="Mobile-Image" src="./res/images/pro1pic2.png" alt="project1" />
+            <img
+              class="Mobile-Image"
+              id="Active_Img"
+              src="./res/images/pro1pic1.png"
+              alt="project1"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro1pic2.png"
+              alt="project1"
+            />
           </div>
           <div class="Slider-Control">
-            <div class="Slide_Left Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Left Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-left"></i>
             </div>
-            <div class="Slide_Right Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Right Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- ****Super Maze**** -->
       <div class="Project">
         <div class="Project-Details">
           <div class="Project-Details-Box">
@@ -113,61 +156,100 @@
                 </div>
                 <h3>Recursive Backtracker Algorithm</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Responsive Design</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Different Themes</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Hints</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
             </div>
             <div class="btn-container">
-              <a href="https://github.com/Ash-Kay/SuperMaze" target="_blank"><button class="btn">Code</button></a>
+              <a href="https://github.com/Ash-Kay/SuperMaze" target="_blank"
+                ><button class="btn">Code</button></a
+              >
             </div>
           </div>
         </div>
         <div class="Project-Image">
           <div class="Mobile-Cover">
-            <img class="Mobile-Image" id="Active_Img" src="./res/images/pro2pic1.png" alt="project2" />
-            <img class="Mobile-Image" src="./res/images/pro2pic2.png" alt="project2" />
-            <img class="Mobile-Image" src="./res/images/pro2pic3.png" alt="project2" />
-            <img class="Mobile-Image" src="./res/images/pro2pic4.png" alt="project2" />
+            <img
+              class="Mobile-Image"
+              id="Active_Img"
+              src="./res/images/pro2pic1.png"
+              alt="project2"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro2pic2.png"
+              alt="project2"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro2pic3.png"
+              alt="project2"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro2pic4.png"
+              alt="project2"
+            />
           </div>
           <div class="Slider-Control">
-            <div class="Slide_Left Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Left Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-left"></i>
             </div>
 
-            <div class="Slide_Right Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Right Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- ****Newzify**** -->
       <div class="Project">
         <div class="Project-Details">
           <div class="Project-Details-Box">
@@ -182,64 +264,92 @@
                 </div>
                 <h3>News from over 30,000 news sources</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Search</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Find by Top Headlines</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>Recycler View & Picasso</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
             </div>
             <div class="btn-container">
-              <a href="https://github.com/Ash-Kay/Newzify" target="_blank"><button class="btn">Code</button></a>
+              <a href="https://github.com/Ash-Kay/Newzify" target="_blank"
+                ><button class="btn">Code</button></a
+              >
             </div>
           </div>
         </div>
         <div class="Project-Image">
           <div class="Mobile-Cover">
-            <img class="Mobile-Image" id="Active_Img" src="./res/images/pro3pic1.gif" alt="project3" />
+            <img
+              class="Mobile-Image"
+              id="Active_Img"
+              src="./res/images/pro3pic1.gif"
+              alt="project3"
+            />
           </div>
           <div class="Slider-Control">
-            <div class="Slide_Left Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Left Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-left"></i>
             </div>
 
-            <div class="Slide_Right Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Right Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- ****Note App**** -->
       <div class="Project">
         <div class="Project-Details">
           <div class="Project-Details-Box">
             <h1 class="Project-Details-Box-Title">Note App</h1>
             <p>
-              A NoteApp made in Kotlin with help of Room and LiveData following MVVM pattern
+              A NoteApp made in Kotlin with help of Room and LiveData following
+              MVVM pattern
             </p>
             <div class="Features-Box">
               <div class="Feature">
@@ -248,36 +358,62 @@
                 </div>
                 <h3>Create, Read and Delete notes</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
               <div class="Feature">
                 <div class="Round-Icon" style="background: rgb(210, 236, 148)">
-                  <i class="fas fa-infinity" style="color: rgb(125, 177, 105)"></i>
+                  <i
+                    class="fas fa-infinity"
+                    style="color: rgb(125, 177, 105)"
+                  ></i>
                 </div>
                 <h3>MVVM design pattern</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, expedita?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem, expedita?
                 </p>
               </div>
             </div>
             <div class="btn-container">
-              <a href="https://github.com/Ash-Kay/NoteApp" target="_blank"><button class="btn">Code</button></a>
+              <a href="https://github.com/Ash-Kay/NoteApp" target="_blank"
+                ><button class="btn">Code</button></a
+              >
             </div>
           </div>
         </div>
         <div class="Project-Image">
           <div class="Mobile-Cover">
-            <img class="Mobile-Image" id="Active_Img" src="./res/images/pro4pic1.png" alt="project4" />
-            <img class="Mobile-Image" src="./res/images/pro4pic2.png" alt="project4" />
-            <img class="Mobile-Image" src="./res/images/pro4pic3.png" alt="project4" />
+            <img
+              class="Mobile-Image"
+              id="Active_Img"
+              src="./res/images/pro4pic1.png"
+              alt="project4"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro4pic2.png"
+              alt="project4"
+            />
+            <img
+              class="Mobile-Image"
+              src="./res/images/pro4pic3.png"
+              alt="project4"
+            />
           </div>
           <div class="Slider-Control">
-            <div class="Slide_Left Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Left Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-left"></i>
             </div>
 
-            <div class="Slide_Right Round-Icon" style="background: rgb(255, 255, 255)">
+            <div
+              class="Slide_Right Round-Icon"
+              style="background: rgb(255, 255, 255)"
+            >
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
@@ -285,6 +421,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./res/js/app.js"></script>
   </body>
 </html>

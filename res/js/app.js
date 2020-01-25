@@ -20,3 +20,20 @@ for (let i = 0; i < totalSlider; i++) {
     imgMat[i][++slidePos[i] % imgMat[i].length].id = "Active_Img";
   });
 }
+
+// ============== TYPE WRITTER===============
+const tw = document.querySelector("#Typewriter");
+const typewriter = new Typewriter(tw, {
+  loop: true
+});
+
+typewriter
+  .typeString("<strong>Android</strong>")
+  .pauseFor(300)
+  .deleteAll(40)
+  .typeString("<strong>Full Stack</strong>")
+  .pauseFor(300)
+  .deleteAll(40)
+  .typeString("<strong>Game</strong>")
+  .pauseFor(400)
+  .start();

@@ -70,9 +70,12 @@
   font-size: 1.2rem;
 }
 
-.Hero-Nav ol li {
-  list-style-type: none;
+.Hero-Nav ol > li,
+.Hero-Nav ol > a {
+  list-style: none;
+  text-decoration: none;
   margin: 10px;
+  color: black;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
@@ -84,8 +87,14 @@
 .Hero-Nav-MainText {
   color: rgb(43, 43, 43);
   margin: 50px;
+}
+
+.Hero-Nav-MainText h1 {
   font-size: 5rem;
-  /* flex-grow: 1; */
+}
+
+.Hero-Nav-MainText span {
+  font-size: 1.5rem;
 }
 
 .Hero-Nav-Button {
@@ -225,5 +234,9 @@
   .Project-Details-Box {
     margin: 10px;
     padding: 20px;
+  }
+
+  .Features-Box {
+    grid-template-columns: 1fr;
   }
 }
