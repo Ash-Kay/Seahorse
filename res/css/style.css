@@ -1,3 +1,10 @@
+/* ================= Variable ===================== */
+
+:root {
+  --primary-color: #6c63ff;
+  --bg-color: #6c63ff;
+}
+
 /* ================= Global ===================== */
 
 * {
@@ -10,7 +17,7 @@
 .btn {
   color: white;
   border: none;
-  background: rgb(78, 56, 177);
+  background: var(--primary-color);
   padding: 10px;
   border-radius: 20px;
   width: 80px;
@@ -21,8 +28,8 @@
 
 .btn:hover {
   background: rgb(255, 255, 255);
-  border: 3px solid rgb(78, 56, 177);
-  color: rgb(78, 56, 177);
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -44,7 +51,9 @@
 }
 
 .Hero-SideImage {
-  background: rgb(30, 40, 68);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Hero-SideImage img {
@@ -81,7 +90,7 @@
 }
 
 .Hero-Nav ol li:hover {
-  border-bottom: 2px solid rgb(78, 56, 177);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .Hero-Nav-MainText {
@@ -102,6 +111,31 @@
 }
 
 /* ===============PROJECT==================== */
+
+.ProjectHeader {
+  width: 100%;
+  font-size: 1.8rem;
+  background: var(--primary-color);
+  /* padding: 4rem 0; */
+  /* margin: 5rem 0; */
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.ProjectHeader-Image {
+  height: 100%;
+}
+
+#ProjectHeader_Left {
+  transform: rotate(-20deg) scale(1.5, 1.5);
+}
+#ProjectHeader_Right {
+  transform: rotate(40deg) scale(2, 2);
+}
 
 .Project {
   background: rgb(245, 245, 245);
@@ -213,6 +247,10 @@
 
 .Space {
   width: 200px;
+}
+
+#Typewriter {
+  color: var(--primary-color);
 }
 
 /* ============MEDIA================== */
