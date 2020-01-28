@@ -2,7 +2,20 @@
 
 :root {
   --primary-color: #6c63ff;
-  --bg-color: #6c63ff;
+  --bg-color-white: rgb(255, 255, 255);
+  --bg-color: rgb(250, 250, 250);
+
+  --icon-red-bg: rgb(255, 202, 202);
+  --icon-red-color: rgb(255, 107, 107);
+
+  --icon-green-bg: rgb(210, 236, 148);
+  --icon-green-color: rgb(125, 177, 105);
+
+  --icon-blue-bg: rgb(148, 208, 236);
+  --icon-blue-color: rgb(59, 142, 236);
+
+  --icon-yellow-bg: rgb(253, 240, 164);
+  --icon-yellow-color: rgb(241, 206, 50);
 }
 
 /* ================= Global ===================== */
@@ -12,6 +25,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Questrial;
+}
+
+body {
+  width: 100%;
 }
 
 .btn {
@@ -41,6 +58,36 @@
   padding-top: 25px;
 }
 
+/* ===================ICONS==================== */
+
+.icon_red {
+  background: var(--icon-red-bg);
+}
+.icon_red > i {
+  color: var(--icon-red-color);
+}
+
+.icon_green {
+  background: var(--icon-green-bg);
+}
+.icon_green > i {
+  color: var(--icon-green-color);
+}
+
+.icon_blue {
+  background: var(--icon-blue-bg);
+}
+.icon_blue > i {
+  color: var(--icon-blue-color);
+}
+
+.icon_yellow {
+  background: var(--icon-yellow-bg);
+}
+.icon_yellow > i {
+  color: var(--icon-yellow-color);
+}
+
 /* ===================HERO==================== */
 
 .Hero {
@@ -52,26 +99,20 @@
 
 .Hero-SideImage {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
 
-.Hero-SideImage img {
+.Hero-SideImage object {
   width: 100%;
-  opacity: 0.6;
-  min-height: 100%;
 }
 
 .Hero-Main {
   background: rgb(250, 250, 250);
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.Hero-Nav {
-  margin: 20px 30px;
+  padding: 20px 30px;
 }
 
 .Hero-Nav ol {
@@ -95,7 +136,6 @@
 
 .Hero-Nav-MainText {
   color: rgb(43, 43, 43);
-  margin: 50px;
 }
 
 .Hero-Nav-MainText h1 {
@@ -107,17 +147,14 @@
 }
 
 .Hero-Nav-Button {
-  margin-left: 60px;
+  margin-bottom: 60px;
 }
-
 /* ===============PROJECT==================== */
 
 .ProjectHeader {
   width: 100%;
   font-size: 1.8rem;
   background: var(--primary-color);
-  /* padding: 4rem 0; */
-  /* margin: 5rem 0; */
   height: 20vh;
   display: flex;
   align-items: center;
@@ -150,7 +187,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  /* width: 66%; */
 }
 
 .Project-Image {
@@ -158,7 +194,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 33%; */
 }
 
 .Mobile-Image {
@@ -174,7 +209,7 @@
   border-radius: 10px;
   z-index: 10;
   box-shadow: 5px 5px 14px 0px rgb(212, 212, 212);
-  /* height: 80vh; */
+  width: 100%;
 }
 
 .Project-Details-Box-Title {
@@ -182,7 +217,7 @@
 }
 
 .Project-Details-Box p {
-  padding-right: 30%;
+  /* padding-right: 30%; */
   padding-bottom: 20px;
 }
 
@@ -253,6 +288,11 @@
   color: var(--primary-color);
 }
 
+.Slide_Left,
+.Slide_Right {
+  background: var(--bg-color-white);
+}
+
 /* ============MEDIA================== */
 
 @media only screen and (max-width: 960px) {
@@ -269,12 +309,33 @@
     grid-template-columns: none;
   }
 
+  .Project-Details {
+    grid-template-columns: 1fr;
+  }
+
   .Project-Details-Box {
     margin: 10px;
     padding: 20px;
+    text-align: center;
   }
 
   .Features-Box {
     grid-template-columns: 1fr;
+  }
+
+  .ProjectHeader {
+    height: 15vh;
+  }
+
+  .ProjectHeader-Image {
+    height: 70%;
+  }
+
+  #ProjectHeader_Left {
+    display: none;
+  }
+
+  .Round-Icon {
+    margin: auto;
   }
 }
